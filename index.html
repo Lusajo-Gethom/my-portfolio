@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Baraza's Portfolio</title>
+</head>
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <!-- <img src="images/logo2.png" class="logo"> -->
+            <ul id="sidemenu">
+               <li><a href="#header" onclick="closemenu()">Home</a></li>
+               <li><a href="#about" onclick="closemenu()">About</a></li>
+               <li><a href="#services" onclick="closemenu()">Services</a></li>
+               <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+               <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+               <img src="icons/close.png" onclick="closemenu()">
+            </ul>
+            <img src="icons/menu.png" class="open" onclick="openmenu()">
+         </nav>
+         <div class="header-text">
+            <p>Web Developer.</p>
+            <h1>Hi, I'm Lusajo <span>Mwakiangwe</span><br>From Tanzania</h1>
+         </div>
+      </div>
+   </div>
+
+<!-- The About Section Starts Here -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <video width="35%" height="auto" controls>
+                  <source src="images/My Actual video.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About <span style="color: #ff004f;">Me</span></h1>
+               <p>
+                  Hello folks👋 Lusajo Mwakiangwe here, a dedicated Full Stack Web Developer with a passion for building dynamic and responsive web applications.
+                  <br>I specialize in both frontend and backend development using modern technologies like HTML, CSS, JavaScript, React, PHP, and MySQL.
+                  <br><br>My experience includes developing full-featured websites, e-commerce platforms, and RESTful APIs that deliver seamless user experiences.
+                  <br>I have built portfolio sites, blog platforms, and admin dashboards that showcase clean UI design and robust backend logic.
+                  <br><br>I'm driven by a goal to craft scalable web solutions that solve real-world problems efficiently and elegantly.
+                  <br>My ambition is to become a leading developer who contributes to open-source projects and innovative web platforms.
+                  <br><br>Beyond coding, I enjoy mentoring other developers, creating tech tutorials on my YouTube channel, and exploring the latest trends in web development.
+                  <br><br>Feel free to explore my projects and connect with me via email or social media platforms.
+                  <br><hr>
+               </p>
+               
+
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <!-- <li><span>Embedded System Development</span><br>Creating Robust Home automation systems -->
+                     <!-- <br>Using <span>C++ and Java</span> for Application and web Backend.</li> -->
+                     <li><span>Web Development</span><br>Creating User friendly websites for Home automation devices.
+                        <br>using HTML5 and CSS3</li>
+                     <li><span>App Development</span><br>Creating cut edge Application for both Android and IOS for Home automation devices</li>
+                  </ul>
+               </div>
+
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>2025 </span><br>Created a Bulb controlling system <span>(BulbBuddy)</span></li>
+                     <li><span>2024 </span><br>Created a portfolio <span>My portfolio</span></li>
+                  </ul>
+               </div>
+
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2023 - 2027</span><br>Began taking a degree in <span>Bussiness Information System</span> at University of <span>Dodoma</span></li>
+                     <li><span>2021-2023</span><br>Took My High School Certificate at <span>Galanos</span> High School </li>
+                     <li><span>2017-2020</span><br>Took My Ordinary-Level Certificate at <span>Star high</span> Secondary School</li>
+                     <li><span>2009-2016</span><br>Took My Primary-Level Certificate at <span>Mwembetogwa</span> Primary School</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- --Services Page starts Here-- -->
+   <div id="services">
+      <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+               <img src="icons/chipupe.png">
+               <h2>Front End development</h2>
+               <p>Creating the bussiness frontends <span style="font-weight: bold;">C++</span> for Micro-controller programming and <span style="font-weight: bold;">Java</span> for Application and web Backend</p>
+               <a href="https://youtube.com/@barazabytes" target="_blank">Learn More</a>
+            </div>
+
+            <div>
+               <img src="icons/upe.png">
+               <h2>Back End Development</h2>
+               <p>Creating accesible backend</p>
+               <a href="https://youtube.com/@barazabytes" target="_blank">Learn More</a>
+            </div>
+
+            <div>
+               <img src="icons/appupe.png">
+               <h2>Web Development</h2>
+               <p>Creating User friendly websites for Home automation devices.
+                  using <span style="font-weight: bold;">HTML5 and CSS3</span></p>
+               <a href="https://youtube.com/@barazabytes" target="_blank">Learn More</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- ------------------Portfolio-------------------- -->
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+               <img src="images/interprenua.png" >
+               <div class="layer">
+                  <h3>Bussiness Motivation</h3>
+                  <p>When Bussiness is your carrier your at the right place
+                     <br> Their are Available courses
+                  </p>
+                  <a href="https://youtube.com/@barazabytes"><img src="icons/link.png" target="_blank"></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-2.png" >
+               <div class="layer">
+                  <h3>My Gallery</h3>
+                  <p>The Gallery That displays the actual work prepared by mr Lusajo Gethom</p>
+                  <a href="https://youtube.com/@barazabytes"><img src="icons/link.png" target="_blank"></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-3.png" >
+               <div class="layer">
+                  <h3>My Portfolio</h3>
+                  <p>Lusajo's Portfolio.</p>
+                  <a href="#header"><img src="icons/link.png"></a>
+               </div>
+            </div>
+         </div>
+         <a href="https://youtube.com/@barazabytes" class="btn">See More</a>
+      </div>
+   </div>
+   
+<!-- ------------------------contact-------------------- -->
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact <span style="color: #ff004f;">Me</span></h1>
+               <p><img src="icons/email.png">gethomfredy@gmail.com</p>
+               <p><img src="icons/phone.png">0740-7672-65</p>
+               <div class="social-icons">
+                  <a href="https://facebook.com/said-junior" target="_blank"><img src="icons/fb.png"></a>
+                  <a href="https://x.com/barazars45" target="_blank"><img src="icons/xupe.png"></a>
+                  <a href="https://instagram.com/mr._bytes" target="_blank"><img src="icons/instag.png"></a>
+                  <a href="https://linkedin.com/barazars45" target="_blank"><img src="icons/in.png"></a>
+               </div>
+               <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="text" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                  <span id="msg"></span>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright &copy; <span style="color: #ff004f;">2025</span> Lusajo</p>
+      </div>
+   </div>
+   <script>
+   // Used to animate the About Me Page
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {   // Removes the UnderLine and it's respective Contents
+         for(tablink of tablinks) {
+            tablink.classList.remove("active-link"); // Removes the Underline
+         }
+         for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab"); // Removes the Contents
+         }
+
+         event.currentTarget.classList.add("active-link");  // This Statement makes the active link have the Underline (Daaaaamn!)
+         document.getElementById(tabname).classList.add("active-tab");
+      
+      }
+   </script>
+
+   <script>
+      // Used to animate the side bar
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+         sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+         sidemenu.style.right = "-200px";
+      }
+   </script>
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz3pCFHXsYSfPcxM1VpCKNcaiCvP6e5wdtNU4TA4CPVl6TM5SzgVHyIA-YjvBDCakp8/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent Successifully😊"
+            setTimeout(function() {
+               mas.innerHTML = "";
+            }, 3000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+</html>
